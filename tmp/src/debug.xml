@@ -4,9 +4,9 @@
 
 <properties>
 
-    <entry key='config.default'>./deployments/tmp/src/setup/default.xml</entry>
+    <entry key='config.default'>/deployments/tmp/src/setup/default.xml</entry>
 
-    <entry key='web.path'>./deployments/tmp/src/traccar-web/web</entry>
+    <entry key='web.path'>/deployments/tmp/src/traccar-web/web</entry>
     <entry key='web.debug'>true</entry>
     <entry key='web.console'>true</entry>
 
