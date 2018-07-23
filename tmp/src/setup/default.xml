@@ -7,8 +7,8 @@
     <!-- SERVER CONFIG -->
 
     <entry key='web.enable'>true</entry>
-    <entry key='web.port'>8082</entry>
-    <entry key='web.path'>./web</entry>
+    <entry key='web.port'>8080</entry>
+    <entry key='web.path'>/deployments/tmp/src/web</entry>
     <entry key='web.cacheControl'>max-age=3600,public</entry>
 
     <entry key='geocoder.enable'>false</entry>
@@ -16,7 +16,7 @@
 
     <entry key='logger.enable'>true</entry>
     <entry key='logger.level'>all</entry>
-    <entry key='logger.file'>./logs/tracker-server.log</entry>
+    <entry key='logger.file'>/deployments/tmp/src/logs/tracker-server.log</entry>
 
     <entry key='filter.enable'>true</entry>
     <entry key='filter.future'>86400</entry>
@@ -26,7 +26,7 @@
     <entry key='processing.computedAttributes.enable'>true</entry>
     <entry key='processing.engineHours.enable'>true</entry>
 
-    <entry key='media.path'>./media</entry>
+    <entry key='media.path'>/deployments/tmp/src/media</entry>
 
     <entry key='notificator.types'>web,mail</entry>
 
@@ -40,7 +40,7 @@
 
     <entry key='database.generateQueries'>true</entry>
 
-    <entry key='database.changelog'>./schema/changelog-master.xml</entry>
+    <entry key='database.changelog'>/deployments/tmp/src/schema/changelog-master.xml</entry>
  
     <entry key='database.loginUser'>
         SELECT * FROM tc_users
