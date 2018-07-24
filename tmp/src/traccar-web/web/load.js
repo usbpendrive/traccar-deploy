@@ -126,11 +126,11 @@
                                     window.Strings[key] = data[key];
                                 }
                             }
-                            addScriptFile(debugMode ? 'app.js' : 'app.min.js');
+                            addScriptFile('app.min.js');
                         }
                     });
                 } else {
-                    addScriptFile(debugMode ? 'app.js' : 'app.min.js');
+                    addScriptFile('app.min.js');
                 }
             }
         });
