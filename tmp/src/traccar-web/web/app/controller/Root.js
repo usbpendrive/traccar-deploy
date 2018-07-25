@@ -186,7 +186,8 @@ Ext.define('Traccar.controller.Root', {
         var self = this, protocol, pathname, socket;
         protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
         pathname = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1);
-        socket = new WebSocket(protocol + '//' + window.location.host + pathname + 'api/socket');
+        var openshiftWebSocketPort = 8000;
+        socket = new WebSocket(protocol + '//' + window.location.host + ":" + openshiftWebSocketPort + pathname + 'api/socket');
 
         socket.onclose = function () {
             Traccar.app.showToast(Strings.errorSocket, Strings.errorTitle);
